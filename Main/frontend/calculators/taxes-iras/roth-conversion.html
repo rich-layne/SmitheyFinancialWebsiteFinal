@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roth IRA Conversion Calculator - Ronnie Smithey Financial Group</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+            <!-- Navigation -->
+    <nav>
+        <a href="/Main/frontend/index.html" class="nav-brand">
+        <img src="/Main/frontend/images/logo1nav.png" alt="Ronnie Smithey Financial Logo" class="nav-logo">
+        </a>
+        <ul>
+            <li><a href="/Main/frontend/index.html">Home</a></li>
+            <li><a href="/Main/frontend/about.html">About</a></li>
+            <li><a href="/Main/frontend/calculators.html">Calculators</a></li>
+            <li><a href="/Main/frontend/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="section-container">
+        <div class="calculator-container">
+            <h1>Roth IRA Conversion Calculator</h1>
+            <p>Determine if converting to a Roth IRA makes sense</p>
+            
+            <div class="calculator-inputs">
+                <label for="current-balance">Traditional IRA Balance ($):</label>
+                <input type="number" id="current-balance" min="0">
+                
+                <label for="tax-rate">Current Tax Rate (%):</label>
+                <input type="number" id="tax-rate" min="0" max="100">
+                
+                <label for="years">Years Until Retirement:</label>
+                <input type="number" id="years" min="0">
+                
+                <button onclick="calculateConversion()">Calculate</button>
+            </div>
+
+            <div class="calculator-results">
+                <h3>Results</h3>
+                <p>Conversion Tax Cost: <span id="tax-cost">$0.00</span></p>
+                <p>Projected Roth Value: <span id="roth-value">$0.00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Ronnie Smithey Financial Group. All rights reserved.</p>
+    </footer>
+
+    <script src="../../scripts/calculators/roth-conversion.js"></script>
+</body>
+</html>
