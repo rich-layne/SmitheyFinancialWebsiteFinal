@@ -17,7 +17,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
   // Send form data to the backend (backend is running at localhost:5000)
   try {
-    const response = await fetch("http://localhost:5000/send-email", {
+    const response = await fetch("https://smitheyfinancialwebsite.onrender.com/send-email", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
